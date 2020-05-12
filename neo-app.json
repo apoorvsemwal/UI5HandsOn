@@ -16,16 +16,18 @@
       "target": {
         "type": "application",
         "name": "sapui5preview",
-        "entryPath": "/resources"
+        "entryPath": "/resources",
+        "version": "snapshot"
       },
       "description": "SAPUI5 Resources"
-    },    
+    },
     {
       "path": "/test-resources",
       "target": {
         "type": "service",
         "name": "sapui5",
-        "entryPath": "/test-resources"
+        "entryPath": "/test-resources",
+        "version": "snapshot"
       },
       "description": "SAPUI5 Test Resources"
     },
@@ -36,6 +38,6 @@
         "name": "northwind"
       },
       "description": "Northwind OData Service"
-    }    
+    }
   ]
 }
