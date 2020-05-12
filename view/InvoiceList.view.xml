@@ -1,5 +1,5 @@
 <mvc:View controllerName="test.app.controller.InvoiceList" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
-	<List id="invoiceList" class="sapUiResponsiveMargin" width="auto" items="{invoice>/Invoices}">
+	<List id="invoiceList" class="sapUiResponsiveMargin" width="auto" items="{ path : 'invoice>/Invoices', sorter : {path : 'ShipperName', group:true }}">
       <headerToolbar>
          <Toolbar>
             <Title text="{i18n>invoiceListTitle}"/>
