@@ -52,6 +52,38 @@
 			"minUI5Version": "1.60",
 			"libs": {}
 		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "test.app.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"async": true
+			},
+			"routes": [
+				{
+					"pattern": "",
+					"name": "overview",
+					"target": "overview"
+				},
+				{
+					"pattern": "detail/{invoicePath}",
+					"name": "detail",
+					"target": "detail"
+				}
+			],
+			"targets": {
+				"overview": {
+				  "viewId": "overview",
+				  "viewName": "Overview"
+				},
+				"detail": {
+				  "viewId": "detail",
+				  "viewName": "Detail"
+				}
+			}			
+		},	
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",

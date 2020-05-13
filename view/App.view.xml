@@ -1,17 +1,5 @@
 <mvc:View controllerName="test.app.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
 	<Shell>
-		<App class="myTestAppDemo">
-			<pages>
-				<Page title="{i18n>homePageTitle}">
-					<headerContent>
-						<Button icon="sap-icon://hello-world" tooltip="Icon Button Test" press=".onOpenDialog"/>
-					</headerContent>
-					<content>
-						<mvc:XMLView viewName="test.app.view.HelloPanel"/>
-						<mvc:XMLView viewName="test.app.view.InvoiceList"/>
-					</content>
-				</Page>
-			</pages>
-		</App>
+		<App class="myTestAppDemo" id="app"/>
 	</Shell>
 </mvc:View>
